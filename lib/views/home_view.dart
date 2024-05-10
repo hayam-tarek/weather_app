@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:weather_app/cubits/get_weather_cubit/get_weather_cubit.dart';
 import 'package:weather_app/cubits/get_weather_cubit/get_weather_states.dart';
 import 'package:weather_app/views/search_view.dart';
+import 'package:weather_app/widgets/error_body.dart';
 import 'package:weather_app/widgets/no_weather_body.dart';
 import 'package:weather_app/widgets/weather_info_body.dart';
 
@@ -44,7 +45,7 @@ class HomeView extends StatelessWidget {
             } else {
               String message =
                   BlocProvider.of<GetWeatherCubit>(context).message!;
-              return Text(message);
+              return ErrorBody(message: message);
             }
           },
         ));
