@@ -41,11 +41,11 @@ class ErrorBody extends StatelessWidget {
             // ),
             Text(
               "Oops an error occurred😞",
-              style: TextStyle(fontSize: 30),
+              style: TextStyle(fontSize: 25),
             ),
             Text(
               "Try again..🤗",
-              style: TextStyle(fontSize: 30),
+              style: TextStyle(fontSize: 25),
             ),
           ],
         ),
